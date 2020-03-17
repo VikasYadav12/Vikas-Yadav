@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- saved from url=(0086)https://beginnersbook.com/2017/09/java-program-to-make-a-calculator-using-switch-case/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Java Program to Make a Calculator using Switch Case_files/amp4ads-host-v0.js.download"></script><script src="./Java Program to Make a Calculator using Switch Case_files/pubads_impl_rendering_2020030501.js.download"></script><script src="./Java Program to Make a Calculator using Switch Case_files/jquery.color-2.1.2.min.js.download"></script><script async="" src="./Java Program to Make a Calculator using Switch Case_files/analytics.js.download"></script><script async="" src="./Java Program to Make a Calculator using Switch Case_files/apstag.js.download"></script><script type="text/javascript">!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");</script><script type="text/javascript" async="" src="./Java Program to Make a Calculator using Switch Case_files/videoplayer.js.download"></script><script type="text/javascript" async="" src="./Java Program to Make a Calculator using Switch Case_files/prebid.js.download"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Java Program to Make a Calculator using Switch Case</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v13.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="In this Program we are making a simple calculator that performs addition, subtraction, multiplication and division based on the user input. The program">
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://beginnersbook.com/2017/09/java-program-to-make-a-calculator-using-switch-case/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java Program to Make a Calculator using Switch Case">
+<meta property="og:description" content="In this Program we are making a simple calculator that performs addition, subtraction, multiplication and division based on the user input. The program">
+<meta property="og:url" content="https://beginnersbook.com/2017/09/java-program-to-make-a-calculator-using-switch-case/">
+<meta property="og:site_name" content="beginnersbook.com">
+<meta property="article:section" content="Java Examples">
+<meta property="article:published_time" content="2017-09-10T06:20:40+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="In this Program we are making a simple calculator that performs addition, subtraction, multiplication and division based on the user input. The program">
+<meta name="twitter:title" content="Java Program to Make a Calculator using Switch Case">
+<script async="" type="text/javascript" src="./Java Program to Make a Calculator using Switch Case_files/gpt.js.download"></script><script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://beginnersbook.com/#website","url":"https://beginnersbook.com/","name":"beginnersbook.com","inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":"https://beginnersbook.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://beginnersbook.com/2017/09/java-program-to-make-a-calculator-using-switch-case/#webpage","url":"https://beginnersbook.com/2017/09/java-program-to-make-a-calculator-using-switch-case/","name":"Java Program to Make a Calculator using Switch Case","isPartOf":{"@id":"https://beginnersbook.com/#website"},"inLanguage":"en-US","datePublished":"2017-09-10T06:20:40+00:00","dateModified":"2017-09-10T06:20:40+00:00","author":{"@id":"https://beginnersbook.com/#/schema/person/64cfb5962c2792e3bcf861bfeb16a9ab"},"description":"In this Program we are making a simple calculator that performs addition, subtraction, multiplication and division based on the user input. The program"},{"@type":["Person"],"@id":"https://beginnersbook.com/#/schema/person/64cfb5962c2792e3bcf861bfeb16a9ab","name":"Chaitanya Singh","image":{"@type":"ImageObject","@id":"https://beginnersbook.com/#authorlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/6589689a49b9fc28b4ab1aee34ba1acb?s=96&d=monsterid&r=g","caption":"Chaitanya Singh"},"sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://beginnersbook.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="beginnersbook.com » Feed" href="https://feeds.feedburner.com/BeginnersBookFeed">
+<link rel="alternate" type="application/rss+xml" title="beginnersbook.com » Comments Feed" href="https://beginnersbook.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="beginnersbook.com » Java Program to Make a Calculator using Switch Case Comments Feed" href="https://beginnersbook.com/2017/09/java-program-to-make-a-calculator-using-switch-case/feed/">
+<link rel="stylesheet" id="news-pro-theme-css" href="./Java Program to Make a Calculator using Switch Case_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./Java Program to Make a Calculator using Switch Case_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="google-fonts-css" href="./Java Program to Make a Calculator using Switch Case_files/css" type="text/css" media="all">
+<script type="text/javascript" src="./Java Program to Make a Calculator using Switch Case_files/jquery.js.download"></script>
+<script type="text/javascript" src="./Java Program to Make a Calculator using Switch Case_files/jquery-migrate.min.js.download"></script>
+<script type="text/javascript" src="./Java Program to Make a Calculator using Switch Case_files/responsive-menu.js.download"></script>
+<link rel="https://api.w.org/" href="https://beginnersbook.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://beginnersbook.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://beginnersbook.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.3.2">
+<link rel="shortlink" href="https://beginnersbook.com/?p=7142">
+<link rel="alternate" type="application/json+oembed" href="https://beginnersbook.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbeginnersbook.com%2F2017%2F09%2Fjava-program-to-make-a-calculator-using-switch-case%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://beginnersbook.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbeginnersbook.com%2F2017%2F09%2Fjava-program-to-make-a-calculator-using-switch-case%2F&amp;format=xml">
+<script type="text/javascript" src="./Java Program to Make a Calculator using Switch Case_files/3281.js.download"></script><style type="text/css">#waldo-sticky-footer-wrapper {position: fixed; width: 100%; bottom: 0px; left: 0px; text-align: center; z-index: 9000;}#waldo-sticky-footer-wrapper > div {position: relative; display: inline-block}#waldo-sticky-footer-wrapper iframe, #waldo-sticky-footer-wrapper div {margin-left: auto;margin-right: auto;}.waldo-sticky-sidebar{position: fixed; top: 10px;z-index: 90}.waldo-sticky-css{position: sticky; top: 10px; z-index: 90}.waldo-overlay{position: fixed;height: 100%;width: 100%;top: 0;left: 0;z-index: 105;background: rgba(0,0,0,0.7);}#waldo-counter {position: absolute;bottom: 0;right: 0;color: #fff;font-size: 30px;padding: 15px;}.waldo-bfleft {position: fixed; left: 0; top: 10px;z-index:101;}.waldo-bfright {position: fixed; right: 0; top: 10px;z-index:101;}#waldo-tag-6038 {clear: both !important;}div[class^="app_gdpr-"] a {color: #41afbb !important; text-decoration: underline !important}#waldo-close-button {position: absolute; right: 0;top: -24px;}#waldo-close-button a {border: 1px solid rgba(0,0,0,.35);padding: 3px;font-size: 12px;color: #fff;font-weight: bold;background-color: #777;}</style><style type="text/css">.site-title a { background: url(https://beginnersbook.com/wp-content/uploads/2018/11/beginnersbook_logo.png) no-repeat !important; }</style>
+<link rel="icon" href="https://beginnersbook.com/wp-content/uploads/2016/03/favicon2.png" sizes="32x32">
+<link rel="icon" href="https://beginnersbook.com/wp-content/uploads/2016/03/favicon2.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://beginnersbook.com/wp-content/uploads/2016/03/favicon2.png">
+<meta name="msapplication-TileImage" content="https://beginnersbook.com/wp-content/uploads/2016/03/favicon2.png">
+<script type="text/javascript" async="" src="./Java Program to Make a Calculator using Switch Case_files/a.min.js.download"></script><script type="text/javascript">googletag.cmd.push(function() {googletag.pubads().addEventListener('slotRenderEnded', function(event) {waldoPassbackCheck(event);waldoAddCloseBtn(event);});googletag.pubads().enableSingleRequest();googletag.enableServices();gptAdSlots[3282] = googletag.defineSlot('/124067137/beginnersbook160x600FX_1', [160, 600], 'waldo-tag-3282').defineSizeMapping(googletag.sizeMapping().addSize([1024, 0], [[160, 600]]).addSize([768, 0], [[160, 600]]).addSize([0, 0], [[160, 600]]).build()).addService(googletag.pubads());googletag.display('waldo-tag-3282');gptAdSlots[3290] = googletag.defineSlot('/124067137/beginnersbook728x90FS_1', [[728, 90], [320, 50]], 'waldo-tag-3290').defineSizeMapping(googletag.sizeMapping().addSize([1024, 0], [[728, 90]]).addSize([768, 0], [[320, 50]]).addSize([0, 0], [[320, 50]]).build()).addService(googletag.pubads());googletag.display('waldo-tag-3290');gptAdSlots[3292] = googletag.defineSlot('/124067137/beginnersbook160x600FX_2', [160, 600], 'waldo-tag-3292').defineSizeMapping(googletag.sizeMapping().addSize([1024, 0], [[160, 600]]).addSize([768, 0], [[160, 600]]).addSize([0, 0], [[160, 600]]).build()).addService(googletag.pubads());googletag.display('waldo-tag-3292');gptAdSlots[3340] = googletag.defineSlot('/124067137/beginnersbook728x90FS_3', [[728, 90], [300, 250], [320, 50]], 'waldo-tag-3340').defineSizeMapping(googletag.sizeMapping().addSize([1024, 0], [[728, 90], [300, 250]]).addSize([768, 0], [[300, 250], [320, 50]]).addSize([0, 0], [[300, 250], [320, 50]]).build()).addService(googletag.pubads());googletag.display('waldo-tag-3340');});</script><link rel="preload" href="./Java Program to Make a Calculator using Switch Case_files/f(4).txt" as="script"><script type="text/javascript" src="./Java Program to Make a Calculator using Switch Case_files/f(4).txt"></script><link rel="preload" href="./Java Program to Make a Calculator using Switch Case_files/f(5).txt" as="script"><script type="text/javascript" src="./Java Program to Make a Calculator using Switch Case_files/f(5).txt"></script><script src="./Java Program to Make a Calculator using Switch Case_files/pubads_impl_2020030501.js.download" async=""></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-37/html/container.html"></head>
+<body class="post-template-default single single-post postid-7142 single-format-standard custom-header header-image sidebar-content-sidebar genesis-breadcrumbs-hidden genesis-footer-widgets-hidden news-pro-green"><div class="site-container"><header class="site-header"><div class="wrap"><div class="title-area"><p class="site-title"><a href="https://beginnersbook.com/">beginnersbook.com</a></p></div><div class="widget-area header-widget-area"><section id="custom_html-38" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><!-- 728x90/320x50 -->
+<div id="waldo-tag-3290" data-processed="true" data-google-query-id="CMWhgsGToegCFVdiKwodBl4Jgg"><div id="google_ads_iframe_/124067137/beginnersbook728x90FS_1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/124067137/beginnersbook728x90FS_1_0" title="3rd party ad content" name="google_ads_iframe_/124067137/beginnersbook728x90FS_1_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="2" data-load-complete="true" src="./Java Program to Make a Calculator using Switch Case_files/saved_resource(1).html"></iframe></div></div></div></div></section>
+</div></div></header><nav class="nav-primary" aria-label="Main"><div class="wrap"><div class="responsive-menu-icon"></div><ul id="menu-main-menu" class="menu genesis-nav-menu menu-primary responsive-menu"><li id="menu-item-6105" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-6105"><a href="https://beginnersbook.com/"><span>Home</span></a></li>
+<li id="menu-item-8976" class="megamenu menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-8976"><a href="https://beginnersbook.com/2017/09/java-program-to-make-a-calculator-using-switch-case/#"><span>All Tutorials</span></a>
+<ul class="sub-menu">
+	<li id="menu-item-7076" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-7076"><a href="https://beginnersbook.com/2013/05/servlet-tutorial/"><span>Learn Servlet</span></a></li>
+	<li id="menu-item-5679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5679"><a href="https://beginnersbook.com/jsp-tutorial-for-beginners/"><span>Learn JSP</span></a></li>
+	<li id="menu-item-6235" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6235"><a href="https://beginnersbook.com/jsp-jstl-tutorial-jstl-functions-and-core-tags/"><span>Learn JSTL</span></a></li>
+	<li id="menu-item-6239" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6239"><a href="https://beginnersbook.com/2014/01/c-tutorial-for-beginners-with-examples/"><span>Learn C</span></a></li>
+	<li id="menu-item-8977" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8977"><a href="https://beginnersbook.com/2017/08/c-plus-plus-tutorial-for-beginners/"><span>Learn C++</span></a></li>
+	<li id="menu-item-8978" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8978"><a href="https://beginnersbook.com/2017/09/mongodb-tutorial/"><span>Learn MongoDB</span></a></li>
+	<li id="menu-item-8979" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8979"><a href="https://beginnersbook.com/2018/10/xml-tutorial-learn-xml/"><span>Learn XML</span></a></li>
+	<li id="menu-item-8992" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8992"><a href="https://beginnersbook.com/2018/03/python-tutorial-learn-programming/"><span>Learn Python</span></a></li>
+	<li id="menu-item-6243" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6243"><a href="https://beginnersbook.com/2017/02/perl-tutorial-for-beginners/"><span>Learn Perl</span></a></li>
+	<li id="menu-item-9648" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9648"><a href="https://beginnersbook.com/2017/12/kotlin-tutorial/"><span>Learn Kotlin</span></a></li>
+</ul>
+</li>
+<li id="menu-item-5678" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5678"><a href="https://beginnersbook.com/java-tutorial-for-beginners-with-examples/"><span>Core Java</span></a></li>
+<li id="menu-item-5682" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5682"><a href="https://beginnersbook.com/2013/04/oops-concepts/"><span>OOPs</span></a></li>
+<li id="menu-item-6236" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6236"><a href="https://beginnersbook.com/java-collections-tutorials/"><span>Collections</span></a></li>
+<li id="menu-item-6237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6237"><a href="https://beginnersbook.com/java-io-tutorial-with-examples/"><span>Java I/O</span></a></li>
+<li id="menu-item-6242" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6242"><a href="https://beginnersbook.com/2015/04/json-tutorial/"><span>JSON</span></a></li>
+<li id="menu-item-6241" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6241"><a href="https://beginnersbook.com/2015/04/dbms-tutorial/"><span>DBMS</span></a></li>
+</ul></div></nav><div class="site-inner"><div class="content-sidebar-wrap"><main class="content"><article class="post-7142 post type-post status-publish format-standard category-java-examples entry"><header class="entry-header"><h1 class="entry-title">Java Program to Make a Calculator using Switch Case</h1>
+<p class="entry-meta">By <span class="entry-author"><span class="entry-author-name">Chaitanya Singh</span></span> | <span class="entry-categories">Filed Under: <a href="https://beginnersbook.com/category/java-examples/" rel="category tag">Java Examples</a></span> </p></header><div class="entry-content"><p>In this Program we are making a simple calculator that performs addition, subtraction, multiplication and division based on the user input. The program takes the value of both the numbers (entered by user) and then user is asked to enter the operation (+, -, * and /), based on the input program performs the selected operation on the entered numbers using <a href="https://beginnersbook.com/2017/08/java-switch-case/">switch case</a>.</p>
+<blockquote><p>If you are new to java, refer this <a href="https://beginnersbook.com/java-tutorial-for-beginners-with-examples/">Java tutorial</a> to start learning java programming from basics.</p></blockquote>
+<h2>Example: Program to make a calculator using switch case in Java</h2>
+<pre class="prettyprint prettyprinted" style=""><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">JavaExample</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    	</span><span class="kwd">double</span><span class="pln"> num1</span><span class="pun">,</span><span class="pln"> num2</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">Scanner</span><span class="pln"> scanner </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Scanner</span><span class="pun">(</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">in</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="str">"Enter first number:"</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="com">/* We are using data type double so that user
+         * can enter integer as well as floating point
+         * value
+         */</span><span class="pln">
+        num1 </span><span class="pun">=</span><span class="pln"> scanner</span><span class="pun">.</span><span class="pln">nextDouble</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="str">"Enter second number:"</span><span class="pun">);</span><span class="pln">
+        num2 </span><span class="pun">=</span><span class="pln"> scanner</span><span class="pun">.</span><span class="pln">nextDouble</span><span class="pun">();</span><span class="pln">
+
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="str">"Enter an operator (+, -, *, /): "</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">char</span><span class="pln"> </span><span class="kwd">operator</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> scanner</span><span class="pun">.</span><span class="kwd">next</span><span class="pun">().</span><span class="pln">charAt</span><span class="pun">(</span><span class="lit">0</span><span class="pun">);</span><span class="pln">
+
+        scanner</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+        </span><span class="kwd">double</span><span class="pln"> output</span><span class="pun">;</span><span class="pln">
+
+        </span><span class="kwd">switch</span><span class="pun">(</span><span class="kwd">operator</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">case</span><span class="pln"> </span><span class="str">'+'</span><span class="pun">:</span><span class="pln">
+            	output </span><span class="pun">=</span><span class="pln"> num1 </span><span class="pun">+</span><span class="pln"> num2</span><span class="pun">;</span><span class="pln">
+                </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+
+            </span><span class="kwd">case</span><span class="pln"> </span><span class="str">'-'</span><span class="pun">:</span><span class="pln">
+            	output </span><span class="pun">=</span><span class="pln"> num1 </span><span class="pun">-</span><span class="pln"> num2</span><span class="pun">;</span><span class="pln">
+                </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+
+            </span><span class="kwd">case</span><span class="pln"> </span><span class="str">'*'</span><span class="pun">:</span><span class="pln">
+            	output </span><span class="pun">=</span><span class="pln"> num1 </span><span class="pun">*</span><span class="pln"> num2</span><span class="pun">;</span><span class="pln">
+                </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+
+            </span><span class="kwd">case</span><span class="pln"> </span><span class="str">'/'</span><span class="pun">:</span><span class="pln">
+            	output </span><span class="pun">=</span><span class="pln"> num1 </span><span class="pun">/</span><span class="pln"> num2</span><span class="pun">;</span><span class="pln">
+                </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+
+            </span><span class="com">/* If user enters any other operator or char apart from
+             * +, -, * and /, then display an error message to user
+             * 
+             */</span><span class="pln">
+            </span><span class="kwd">default</span><span class="pun">:</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">printf</span><span class="pun">(</span><span class="str">"You have entered wrong operator"</span><span class="pun">);</span><span class="pln">
+                </span><span class="kwd">return</span><span class="pun">;</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">num1</span><span class="pun">+</span><span class="str">" "</span><span class="pun">+</span><span class="kwd">operator</span><span class="pun">+</span><span class="str">" "</span><span class="pun">+</span><span class="pln">num2</span><span class="pun">+</span><span class="str">": "</span><span class="pun">+</span><span class="pln">output</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></pre>
+<p>Output:</p>
+<pre class="prettyprint prettyprinted" style=""><span class="typ">Enter</span><span class="pln"> first number</span><span class="pun">:</span><span class="lit">40</span><span class="pln">
+</span><span class="typ">Enter</span><span class="pln"> second number</span><span class="pun">:</span><span class="lit">4</span><span class="pln">
+</span><span class="typ">Enter</span><span class="pln"> an </span><span class="kwd">operator</span><span class="pln"> </span><span class="pun">(+,</span><span class="pln"> </span><span class="pun">-,</span><span class="pln"> </span><span class="pun">*,</span><span class="pln"> </span><span class="pun">/):</span><span class="pln"> </span><span class="pun">/</span><span class="pln">
+</span><span class="lit">40.0</span><span class="pln"> </span><span class="pun">/</span><span class="pln"> </span><span class="lit">4.0</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10.0</span></pre>
+<p></p><div class="lq"><div data-type="ad" data-publisher="Beginnersbook.com" data-format="300x250" data-zone="ros"><iframe id="dm-gpt-iframe-1" width="300" height="250" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" src="./Java Program to Make a Calculator using Switch Case_files/saved_resource(2).html"></iframe></div></div></div><footer class="entry-footer"></footer></article><div class="after-entry"><section id="custom_html-41" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><!-- 728x90/300x250/320x50 --><div id="waldo-tag-3340" data-processed="true" data-google-query-id="CMehgsGToegCFVdiKwodBl4Jgg"><div id="google_ads_iframe_/124067137/beginnersbook728x90FS_3_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/124067137/beginnersbook728x90FS_3_0" title="3rd party ad content" name="google_ads_iframe_/124067137/beginnersbook728x90FS_3_0" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="4" data-load-complete="true" src="./Java Program to Make a Calculator using Switch Case_files/saved_resource(3).html"></iframe></div></div></div></div></section>
+</div>	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://beginnersbook.com/2017/09/java-program-to-make-a-calculator-using-switch-case/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://beginnersbook.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate=""><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="7142" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9338a919c9"></p><p style="display: none;"></p><input type="hidden" id="ak_js" name="ak_js" value="1584435850101"></form>	</div><!-- #respond -->
+	</main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar"><section id="search-2" class="widget widget_search"><div class="widget-wrap"><form class="search-form" method="get" action="https://beginnersbook.com/" role="search"><input class="search-form-input" type="search" name="s" id="searchform-1" placeholder="Search this website"><input class="search-form-submit" type="submit" value="Search"><meta content="https://beginnersbook.com/?s={s}"></form></div></section>
+<section id="custom_html-39" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><!-- 160x600 -->
+<div id="waldo-tag-3282" data-processed="true" data-google-query-id="CMShgsGToegCFVdiKwodBl4Jgg"><div id="google_ads_iframe_/124067137/beginnersbook160x600FX_1_0__container__" style="border: 0pt none; width: 160px; height: 600px;"></div></div></div></div></section>
+<section id="custom_html-40" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><!-- 160x600 -->
+<div id="waldo-tag-3292" data-processed="true" data-google-query-id="CMahgsGToegCFVdiKwodBl4Jgg"><div id="google_ads_iframe_/124067137/beginnersbook160x600FX_2_0__container__" style="border: 0pt none; width: 160px; height: 600px;"></div></div></div></div></section>
+<section id="custom_html-29" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><div data-type="ad" data-publisher="Beginnersbook.com" data-format="160x600" data-zone="ros"><iframe id="dm-gpt-iframe-2" width="160" height="600" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" src="./Java Program to Make a Calculator using Switch Case_files/saved_resource(4).html"></iframe></div></div></div></section>
+<section id="custom_html-31" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><div class="textwidget custom-html-widget"><div data-type="ad" data-publisher="Beginnersbook.com" data-format="160x600" data-zone="ros"><iframe id="dm-gpt-iframe-3" width="160" height="600" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" src="./Java Program to Make a Calculator using Switch Case_files/saved_resource(5).html"></iframe></div></div></div></section>
+</aside></div><aside class="sidebar sidebar-secondary widget-area" role="complementary" aria-label="Secondary Sidebar"><section id="custom_html-22" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><h4 class="widget-title widgettitle">Programs</h4>
+<div class="textwidget custom-html-widget"><ul>
+<li><a href="https://beginnersbook.com/2015/02/simple-c-programs/">C Programs</a></li>
+<li><a href="https://beginnersbook.com/2017/09/java-examples/">Java Programs</a></li>
+</ul></div></div></section>
+<section id="custom_html-18" class="widget_text widget widget_custom_html"><div class="widget_text widget-wrap"><h4 class="widget-title widgettitle">Java Examples</h4>
+<div class="textwidget custom-html-widget"><ul>
+<li><a href="https://beginnersbook.com/2014/02/java-program-to-check-even-or-odd-number/">Check Odd-even</a></li>
+<li><a href="https://beginnersbook.com/2014/04/java-program-for-linear-search-example/">Linear Search</a></li>
+<li><a href="https://beginnersbook.com/2014/04/java-program-to-perform-binary-search/">Binary Search</a></li>
+<li><a href="https://beginnersbook.com/2014/04/java-program-to-print-floyds-triangle-example/">Floyd's Triangle</a></li>
+<li><a href="https://beginnersbook.com/2014/01/java-program-to-reverse-a-number/">Reverse number</a></li>
+<li><a href="https://beginnersbook.com/2014/04/java-program-to-generate-random-number-example/">Random Number</a></li>
+<li><a href="https://beginnersbook.com/2014/01/java-program-to-display-first-n-or-first-100-prime-numbers/">first n prime numbers</a></li>
+<li><a href="https://beginnersbook.com/2014/01/java-program-to-display-prime-numbers/">Disp prime Numbers</a></li>
+<li><a href="https://beginnersbook.com/2014/01/java-program-to-check-prime-number/">Check Prime number</a></li>
+<li><a href="https://beginnersbook.com/2014/01/java-program-to-check-palindrome-string-using-recursion/">Palindrome String</a></li>
+<li><a href="https://beginnersbook.com/2014/01/java-program-to-find-factorial-of-a-given-number-using-recursion/">Find factorial</a></li>
+<li><a href="https://beginnersbook.com/2014/01/java-program-to-sum-the-elements-of-an-array/">Sum of elements of Array</a></li>
+<li><a href="https://beginnersbook.com/2014/01/java-program-to-calculate-area-of-rectangle/">Area of rectangle</a></li>
+<li><a href="https://beginnersbook.com/2014/01/java-program-to-calculate-area-of-square/">Area of Square</a></li>
+<li><a href="https://beginnersbook.com/2014/01/java-program-to-calculate-area-of-triangle/">Area of Triangle</a></li>
+<li><a href="https://beginnersbook.com/2014/01/java-program-to-calculate-area-and-circumference-of-circle/">Circle</a></li>
+</ul>
+<h4 class="widget-title">Tutorials</h4>
+<ul>
+<li><a href="https://beginnersbook.com/java-tutorial-for-beginners-with-examples/">Java Tutorial</a></li>
+<li><a href="https://beginnersbook.com/2013/04/oops-concepts/">OOPs Concepts</a></li>
+ 	<li><a href="https://beginnersbook.com/2013/12/java-strings/">Java String</a></li>
+ 	<li><a href="https://beginnersbook.com/2013/04/java-exception-handling/">Exception handling</a></li>
+ 	<li><a href="https://beginnersbook.com/2013/03/multithreading-in-java/">Java Multithreading</a></li>
+ 	<li><a href="https://beginnersbook.com/java-io-tutorial-with-examples/">Java I/O</a></li>
+ 	<li><a href="https://beginnersbook.com/2014/07/java-serialization/">Java Serialization</a></li>
+	<li><a href="https://beginnersbook.com/2014/08/java-regex-tutorial/">Java Regex</a></li>
+	<li><a href="https://beginnersbook.com/2015/06/java-awt-tutorial/">Java AWT</a></li>
+	<li><a href="https://beginnersbook.com/2015/07/java-swing-tutorial/">Java Swing</a></li>
+<li><a href="https://beginnersbook.com/2014/09/java-enum-examples/">Java Enum</a></li>
+<li><a href="https://beginnersbook.com/2014/09/java-annotations/">Java Annotations</a></li>
+</ul></div></div></section>
+<section id="text-63" class="widget widget_text"><div class="widget-wrap"><h4 class="widget-title widgettitle">Recently Added..</h4>
+			<div class="textwidget"><ul>
+<li><a href="https://beginnersbook.com/2015/04/json-tutorial/">JSON Tutorial</a></li>
+<li><a href="https://beginnersbook.com/2014/08/java-regex-tutorial/">Java Regular Expressions Tutorial</a></li>
+<li><a href="https://beginnersbook.com/2014/09/java-enum-examples/">Java Enum Tutorial</a></li>
+<li><a href="https://beginnersbook.com/2014/09/java-annotations/">Java Annotations Tutorial</a></li>
+</ul>
+</div>
+		</div></section>
+</aside></div><footer class="site-footer"><div class="wrap"><p>Copyright © 2012 – 2020 BeginnersBook . <a href="https://beginnersbook.com/privacy/">Privacy Policy</a> . <a href="https://beginnersbook.com/sitemap_index.xml" title="Sitemap">Sitemap</a></p></div></footer></div><script type="text/javascript" src="./Java Program to Make a Calculator using Switch Case_files/prettify.js.download"></script>
+<script type="text/javascript" charset="utf-8">
+jQuery(document).ready(function($) {
+       $('pre').addClass("prettyprint");
+       prettyPrint();
+});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35249844-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+function _dmBootstrap(file) {
+    var _dma = document.createElement('script');
+    _dma.type = 'text/javascript';
+    _dma.async = true;
+    _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+}
+function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+(function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();
+</script><script type="text/javascript" src="./Java Program to Make a Calculator using Switch Case_files/comment-reply.min.js.download"></script>
+<script type="text/javascript" src="./Java Program to Make a Calculator using Switch Case_files/wp-embed.min.js.download"></script>
+<script async="async" type="text/javascript" src="./Java Program to Make a Calculator using Switch Case_files/form.js.download"></script>
+
+</body><iframe sandbox="allow-scripts allow-same-origin" id="82ff09b5b821399" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="./Java Program to Make a Calculator using Switch Case_files/cs.html">
+    </iframe></html>
